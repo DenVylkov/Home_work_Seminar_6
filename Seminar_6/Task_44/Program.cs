@@ -6,14 +6,14 @@
 Console.Clear();
 Console.Write($"Введите первое N количество чисел Фибоначчи: ");
 int Ncount = Convert.ToInt32(Console.ReadLine());
-int FirstNumder = 0;
+int FirstNumber = 0;
 int SecondNumber = 1;
 int result;
-Console.Write($"Если N = {Ncount} -> {FirstNumder} {SecondNumber} ");
+Console.Write($"Если N = {Ncount} -> {FirstNumber} {SecondNumber} ");
 for (int i = 0; i < Ncount - 2; i++)
 {
-    result = FirstNumder + SecondNumber;
-    FirstNumder = SecondNumber;
+    result = FirstNumber + SecondNumber;
+    FirstNumber = SecondNumber;
     SecondNumber = result;
     Console.Write(result + " ");
 }
